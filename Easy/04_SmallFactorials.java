@@ -10,23 +10,30 @@ Input Constraint:
 1 <= T <= 100
 1 <= N <= 100 
 */
-
 import java.util.Scanner;
-
+import java.math.*;
+import java.util.ArrayList;
 class TestClass {
-	public static int factorial(int num){
-		if(num == 0){
-			return 1;
-		}
-		return num * factorial(num - 1);
-	}
-	
-  public static void main(String args[] ) throws Exception {
-		Scanner input = new Scanner(System.in);
-		int T = input.nextInt();
-		for(int i = 0; i < T; i++){
-			int num = input.nextInt();
-			System.out.println(factorial(num));
-		}
+  public static BigInteger factorial(Integer num){
+    if(num == 1){ //Base case, must be BigInteger.ONE instead of just 1
+      return BigInteger.ONE; 
     }
-}
+    return factorial(num-1).multiply(new BigInteger(String.valueOf(num))); //Equiv of num*factorial(num-1) using BigInteger
+  }
+  
+  public static void main(String args[] ) throws Exception {
+    Scanner input = new Scanner(System.in);
+    int T = input.nextInt(); //Take as input number of test cases
+    ArrayList<Integer> list = new ArrayList<Integer>(); //ArrayList to store input variables
+    for(int i = 0; i < T; i++){
+      list.add(Integer.valueOf(input.nextInt())); //Store each input number entered into the list
+    }
+    //Create BigInteger output list because some of our factorial outputs will be too large for even a "long" to handle
+    ArrayList<BigInteger> output = new ArrayList<BigInteger>(); 
+    for(Integer x : list){
+      output.add(factorial(x)); //get the factorial of each element in the input list and store in output list.
+    }
+    for(BigInteger x: output){
+      System.out.println(x); //print results
+    }
+  }
