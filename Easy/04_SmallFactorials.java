@@ -17,8 +17,8 @@ class TestClass {
   public static BigInteger factorial(Integer num){
     if(num == 1){ //Base case, must be BigInteger.ONE instead of just 1
       return BigInteger.ONE; 
-    }
-    return factorial(num-1).multiply(new BigInteger(String.valueOf(num))); //Equiv of num*factorial(num-1) using BigInteger
+    } //Equivalent of num*factorial(num-1) using BigInteger
+    return factorial(num-1).multiply(new BigInteger(String.valueOf(num))); 
   }
   
   public static void main(String args[] ) throws Exception {
