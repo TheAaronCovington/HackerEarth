@@ -2,13 +2,13 @@
 DESCRIPTION: You are asked to calculate factorials of some small positive integers.
 Input:
 An integer T, denoting the number of testcases, followed by T lines, each containing a single integer N.
-
 Output:
 For each integer N given at input, output a single line the value of N!
-
 Input Constraint:
 1 <= T <= 100
-1 <= N <= 100 
+1 <= N <= 100  
+NOTE: Because in the worst case we have to find factorial of 100, int and long primitive types
+do not allow for large enough numbers, so we must use the BigInteger class.
 */
 import java.util.Scanner;
 import java.math.*;
