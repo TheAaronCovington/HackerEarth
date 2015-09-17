@@ -1,7 +1,7 @@
 /*
   DESCRIPTION: Takes in integer L for length, N for number of iterations, and W and H which are on the 
   same line separated by a space and stand for width and height.  I split them by space and convert to 
-  integers storing in variables W and H.  If W or L is < H print "UPLOAD ANOTHER".  If picture is 
+  integers storing in variables W and H.  If W or H is < L print "UPLOAD ANOTHER".  If picture is 
   square W and H will be equal and we will print "ACCEPTED". Otherwise we print "CROP IT".
   Solution to:  https://www.hackerearth.com/problem/algorithm/roy-and-profile-picture/description/
 */
