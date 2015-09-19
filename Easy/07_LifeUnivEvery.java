@@ -1,5 +1,6 @@
 /*
-  DESCRIPTION: Reads in numbers and prints them out until number 42 is read.  Super easy problem, probably easiest on the site.
+  DESCRIPTION: Solution to the "Life Universe Everything" problem.  Reads in numbers
+  and prints them out until number 42 is read.  Super easy problem, probably easiest on the site.
 */
 import java.util.Scanner;
 class TestClass {
