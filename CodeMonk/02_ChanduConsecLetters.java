@@ -1,8 +1,8 @@
 /*
-  DESCRIPTION: Chandu is very fond of strings. (Or so he thinks!) But, he does not like strings 
-  which have same consecutive letters. No one has any idea why it is so. He calls these strings 
-  as Bad strings. So, Good strings are the strings which do not have same consecutive letters. 
-  Now, the problem is quite simple. Given a string S, you need to convert it into a Good String.
+  DESCRIPTION: Solution to "Chandu and Consecutive Letters" CodeMonk problem on HackerEarth.  Chandu is very fond 
+  of strings. (Or so he thinks!) But, he does not like strings which have same consecutive letters. No one has any
+  idea why it is so. He calls these strings as Bad strings. So, Good strings are the strings which do not have same
+  consecutive letters. Now, the problem is quite simple. Given a string S, you need to convert it into a Good String.
   You simply need to perform one operation - if there are two same consecutive letters, delete one of them.
   Input:
   The first line contains an integer T, denoting the number of test cases.
