@@ -32,7 +32,11 @@ N and X are given which are 5 and 12 respectively. In the next 5 lines, you have
 by ith friend. As friends numbered from 2 to 4 (inclusively) have gifts value which are 
 {3, 4, 5}, and their sum equals to 12 - that is, the given value of X. So, the answer is YES.
 */
-import java.io.BufferedReader;
+
+/*NOTE:  Had to use BufferedReader and not Scanner due to 1 sec time limit per input file.
+The huge input on test case 3 kept timing out when using Scanner and I remember reading that
+BufferedReader and InputstreamReader are actually faster.*/
+import java.io.BufferedReader; 
 import java.io.InputStreamReader;
 class TestClass {
     public static void main(String args[] ) throws Exception {
